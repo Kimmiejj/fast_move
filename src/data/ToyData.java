@@ -1,7 +1,9 @@
 package data;
 
 import base.Bike;
+import base.Location;
 import base.Parcel;
+import base.ParcelStatus;
 import base.Person;
 
 public class ToyData {
@@ -25,7 +27,17 @@ public class ToyData {
 
     public static Parcel[] getParcels() {
         Parcel[] parcels = new Parcel[10];
-        // your code
+        
+        parcels[0]= new Parcel (60,ParcelStatus.DELIVERED,new Location(0, 0));
+        parcels[1]= new Parcel (60,ParcelStatus.READY_TO_SHIP,new Location(0, 0));
+        parcels[2]= new Parcel (60,ParcelStatus.SHIPPING,new Location(0, 0));
+        parcels[3]= new Parcel (60,ParcelStatus.DELIVERED,new Location(0, 0));
+        parcels[4]= new Parcel (60,ParcelStatus.READY_TO_SHIP,new Location(0, 0));
+        parcels[5]= new Parcel (60,ParcelStatus.SHIPPING,new Location(0, 0));
+        parcels[6]= new Parcel (60,ParcelStatus.DELIVERED,new Location(0, 0));
+        parcels[7]= new Parcel (60,ParcelStatus.READY_TO_SHIP,new Location(0, 0));
+        parcels[8]= new Parcel (60,ParcelStatus.SHIPPING,new Location(0, 0));
+        parcels[9]= new Parcel (60,ParcelStatus.DELIVERED,new Location(0, 0));
 
         return parcels;
     }
