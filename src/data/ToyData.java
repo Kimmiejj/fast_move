@@ -7,15 +7,18 @@ import base.Person;
 public class ToyData {
 
     public static Bike[] getBikes() {
-        Bike[] bikes = new Bike[3];
-        // your code
-
+      
+         Bike[] bikes = new Bike[3];
+         bikes[0]=new Bike("BMW",1000);
+         bikes[1]=new Bike("Honda",500);
+         bikes[2]=new Bike("Toyota",250);
+        
         return bikes;
     }
 
     public static Person[] getPerson() {
         Person[] person = new Person[3];
-        // your code
+        
 
         return person;
     }
